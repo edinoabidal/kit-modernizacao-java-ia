@@ -1,0 +1,4 @@
+ESTILO_F3
+autowired producao {('rm', 'import'): 8, ('rm', 'anotacao'): 8}
+getfirst_removefirst testes {('rm', 'chamada'): 63, ('add', 'chamada'): 63}
+mapeamentos producao {('rm', 'anotacao'): 33, ('add', 'anotacao'): 33}

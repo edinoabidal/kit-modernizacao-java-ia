@@ -1,0 +1,17 @@
+## GET /petclinic/actuator/health
+{"status":"UP"}
+HTTP 200
+
+## GET /petclinic/v3/api-docs
+HTTP 200 content-type=application/json bytes=15738
+
+## GET /petclinic/swagger-ui.html (sem seguir redirecionamento)
+HTTP 302 location=http://localhost:9966/petclinic/swagger-ui/index.html
+
+## GET /petclinic/swagger-ui.html (seguindo redirecionamento)
+HTTP 200 url_final=http://localhost:9966/petclinic/swagger-ui/index.html content-type=text/html
+<title>Swagger UI</title>
+
+## GET /petclinic/v3/api-docs/swagger-config (configuração lida pela interface)
+{"configUrl":"/petclinic/v3/api-docs/swagger-config","oauth2RedirectUrl":"http://localhost:9966/petclinic/swagger-ui/oauth2-redirect.html","url":"/petclinic/v3/api-docs","validatorUrl":""}
+HTTP 200

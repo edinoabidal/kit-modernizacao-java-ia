@@ -1,0 +1,13 @@
+fase,commits,categoria,arquivos_alterados,arquivos_criados,arquivos_apagados,linhas_adicionadas,linhas_removidas,linhas_total
+F3,517a399..d0d758d,producao,41,0,0,163,180,343
+F3,517a399..d0d758d,testes,9,0,0,70,66,136
+F3,517a399..d0d758d,configuracao,3,0,0,27,16,43
+F3,517a399..d0d758d,total,53,0,0,260,262,522
+F4,d0d758d..07dacc9,producao,5,1,0,47,48,95
+F4,d0d758d..07dacc9,testes,7,0,0,8,1,9
+F4,d0d758d..07dacc9,configuracao,1,1,0,6,2,8
+F4,d0d758d..07dacc9,total,13,2,0,61,51,112
+F5,07dacc9..7c0326d,producao,2,0,0,14,28,42
+F5,07dacc9..7c0326d,testes,0,0,0,0,0,0
+F5,07dacc9..7c0326d,configuracao,0,0,0,0,0,0
+F5,07dacc9..7c0326d,total,2,0,0,14,28,42

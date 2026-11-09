@@ -1,0 +1,41 @@
+======================================================================
+Medicao: fase=final
+Projeto: /home/<usuario>/tcc-modernizacao/spring-petclinic-rest
+JAVA_HOME: /mnt/c/Users/<usuario>/java/jdk-21-temurin-linux-x64
+Saida bruta: /home/<usuario>/tcc-modernizacao/medicoes/final-20261109-113524
+======================================================================
+>> Rodando build (clean verify)...
+   resultado=sucesso  codigo=0  duracao=28.8s
+   testes: total=171 falhas=0 erros=0 ignorados=0
+   cobertura: linhas=88.52% ramos=70.22% (ok)
+>> Consultando dependencias/plugins desatualizados...
+   deps_declaradas=26 desatualizadas=17 (mesma_major=10) plugins_desatualizados=2
+   parent: atual=3.5.16 mais_recente=4.1.2 mais_recente_mesma_major=3.5.16
+======================================================================
+RESUMO DA MEDICAO (fase=final)
+  data_hora                = 2026-11-09 11:35:24
+  fase                     = final
+  commit                   = 7c0326d
+  java_versao              = 21.0.13
+  maven_versao             = 3.6.3
+  build_resultado          = sucesso
+  build_codigo_saida       = 0
+  build_duracao_s          = 28.8
+  testes_total             = 171
+  testes_falhas            = 0
+  testes_erros             = 0
+  testes_ignorados         = 0
+  cobertura_linhas_pct     = 88.52
+  cobertura_ramos_pct      = 70.22
+  deps_declaradas          = 26
+  deps_desatualizadas      = 17
+  deps_desatualizadas_mesma_major = 10
+  plugins_desatualizados   = 2
+  parent_atual             = 3.5.16
+  parent_mais_recente      = 4.1.2
+  parent_mais_recente_mesma_major = 3.5.16
+  arvore_limpa             = sim
+----------------------------------------------------------------------
+Linha adicionada em: /home/<usuario>/tcc-modernizacao/medicoes/medicoes.csv
+Saidas brutas em:    /home/<usuario>/tcc-modernizacao/medicoes/final-20261109-113524
+======================================================================
