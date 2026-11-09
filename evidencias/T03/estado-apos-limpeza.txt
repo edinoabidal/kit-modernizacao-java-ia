@@ -1,0 +1,8 @@
+branch atual: legado
+git rev-parse --short HEAD: 517a399
+git status --porcelain: []
+branches locais:
+* legado
+  master
+linha 25 do populateDB.sql:
+INSERT INTO owners VALUES (1, 'George', 'Franklin', '110 W. Liberty St.', 'Madison', '6085551023');

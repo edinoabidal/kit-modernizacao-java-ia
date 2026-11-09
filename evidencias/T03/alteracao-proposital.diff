@@ -1,0 +1,13 @@
+diff --git a/src/main/resources/db/hsqldb/populateDB.sql b/src/main/resources/db/hsqldb/populateDB.sql
+index e5ee7b9..2b9c0d9 100644
+--- a/src/main/resources/db/hsqldb/populateDB.sql
++++ b/src/main/resources/db/hsqldb/populateDB.sql
+@@ -22,7 +22,7 @@ INSERT INTO types VALUES (4, 'snake');
+ INSERT INTO types VALUES (5, 'bird');
+ INSERT INTO types VALUES (6, 'hamster');
+ 
+-INSERT INTO owners VALUES (1, 'George', 'Franklin', '110 W. Liberty St.', 'Madison', '6085551023');
++INSERT INTO owners VALUES (1, 'George', 'Franklin', '110 W. Liberty St.', 'Springfield', '6085551023');
+ INSERT INTO owners VALUES (2, 'Betty', 'Davis', '638 Cardinal Ave.', 'Sun Prairie', '6085551749');
+ INSERT INTO owners VALUES (3, 'Eduardo', 'Rodriquez', '2693 Commerce St.', 'McFarland', '6085558763');
+ INSERT INTO owners VALUES (4, 'Harold', 'Davis', '563 Friendly St.', 'Windsor', '6085553198');

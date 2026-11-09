@@ -1,0 +1,18 @@
+# Saídas de build
+target/
+
+# Python
+__pycache__/
+*.pyc
+
+# Arquivos locais e de IDE
+*.log.tmp
+*.local
+.env
+.env.*
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+*:Zone.Identifier

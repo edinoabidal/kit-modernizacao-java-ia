@@ -1,0 +1,45 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.2)
+
+INFO  PetClinicApplication - Starting PetClinicApplication v2.6.2 using Java 1.8.0_504 on <host> with PID 206333 (/home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/spring-petclinic-rest-2.6.2.jar started by <usuario> in /home/<usuario>/tcc-modernizacao/spring-petclinic-rest)
+DEBUG PetClinicApplication - Running with Spring Boot v2.6.2, Spring v5.3.14
+INFO  PetClinicApplication - The following profiles are active: hsqldb,spring-data-jpa
+INFO  Version - HV000001: Hibernate Validator 6.2.0.Final
+INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 7 JPA repository interfaces.
+INFO  TomcatWebServer - Tomcat initialized with port(s): 9966 (http)
+INFO  Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9966"]
+INFO  StandardService - Starting service [Tomcat]
+INFO  StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+INFO  [/petclinic] - Initializing Spring embedded WebApplicationContext
+INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1910 ms
+INFO  HikariDataSource - HikariPool-1 - Starting...
+INFO  PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+INFO  HikariDataSource - HikariPool-1 - Start completed.
+INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  Version - HHH000412: Hibernate ORM core version 5.6.3.Final
+INFO  Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+INFO  JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+INFO  EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+INFO  UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: <removida>
+
+INFO  DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b09fac1, org.springframework.security.web.context.SecurityContextPersistenceFilter@50cf5a23, org.springframework.security.web.header.HeaderWriterFilter@54e81b21, org.springframework.security.web.authentication.logout.LogoutFilter@1e8823d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@273c947f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1af1347d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62df0ff3, org.springframework.security.web.session.SessionManagementFilter@6650813a, org.springframework.security.web.access.ExceptionTranslationFilter@17f9344b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15051a0]
+INFO  Http11NioProtocol - Starting ProtocolHandler ["http-nio-9966"]
+INFO  TomcatWebServer - Tomcat started on port(s): 9966 (http) with context path '/petclinic'
+INFO  PetClinicApplication - Started PetClinicApplication in 6.312 seconds (JVM running for 8.317)
+INFO  [/petclinic] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+INFO  DispatcherServlet - Completed initialization in 1 ms
+INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  HikariDataSource - HikariPool-1 - Shutdown initiated...
+INFO  HikariDataSource - HikariPool-1 - Shutdown completed.

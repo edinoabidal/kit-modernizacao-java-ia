@@ -1,0 +1,48 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< br.tcc.modernizacao:testes-caracterizacao >--------------
+[INFO] Building Testes de caracterização da API do PetClinic REST 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ testes-caracterizacao ---
+[INFO] Deleting /home/<usuario>/tcc-modernizacao/kit/testes-caracterizacao/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ testes-caracterizacao ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/<usuario>/tcc-modernizacao/kit/testes-caracterizacao/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.1:compile (default-compile) @ testes-caracterizacao ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ testes-caracterizacao ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/<usuario>/tcc-modernizacao/kit/testes-caracterizacao/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.1:testCompile (default-testCompile) @ testes-caracterizacao ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.6:test (default-test) @ testes-caracterizacao ---
+[INFO] Tests will run in random order. To reproduce ordering use flag -Dsurefire.runOrder.random.seed=85654494621809
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.tcc.modernizacao.caracterizacao.ApiPetClinicCaracterizacaoTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.916 s -- in br.tcc.modernizacao.caracterizacao.ApiPetClinicCaracterizacaoTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.646 s
+[INFO] Finished at: 2026-11-05T18:07:04-03:00
+[INFO] ------------------------------------------------------------------------
