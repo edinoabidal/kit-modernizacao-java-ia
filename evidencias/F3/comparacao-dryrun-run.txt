@@ -1,0 +1,3 @@
+Comparacao dryRun x run (hash git do arquivo antes..depois)
+arquivos no dryRun: 53 | no run: 53 | mesmos arquivos: True
+arquivos com resultado diferente: 0

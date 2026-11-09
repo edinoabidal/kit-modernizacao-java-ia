@@ -1,0 +1,17 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< org.springframework.samples:spring-petclinic-rest >----------
+[INFO] Building spring-petclinic-rest 2.6.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.16.2:display-parent-updates (default-cli) @ spring-petclinic-rest ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/maven-metadata.xml (11 kB at 4.8 kB/s)
+[INFO] The parent project has a newer version:
+[INFO]   org.springframework.boot:spring-boot-starter-parent  3.5.16 -> 4.1.2
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.381 s
+[INFO] Finished at: 2026-11-09T10:09:02-03:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+T04 - Determinismo do OpenRewrite
+Data: 2026-11-05 18:52
+Origem dos dois: commit 517a399; mesmo comando (evidencias/F3/comando-run.txt), JDK 8
+A: spring-petclinic-rest (branch modernizacao, resultado do run da F3)
+B: worktree temporario wt-t04 (run repetido)
+Comando: diff -r --exclude=target --exclude=.git A B
+----
+----
+codigo de saida do diff: 0 (0 = nenhuma diferenca)
+arquivos alterados em A: 53 | em B: 53

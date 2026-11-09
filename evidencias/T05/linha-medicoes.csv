@@ -1,0 +1,2 @@
+data_hora,fase,commit,java_versao,maven_versao,build_resultado,build_codigo_saida,build_duracao_s,testes_total,testes_falhas,testes_erros,testes_ignorados,cobertura_linhas_pct,cobertura_ramos_pct,deps_declaradas,deps_desatualizadas,deps_desatualizadas_mesma_major,plugins_desatualizados,parent_atual,parent_mais_recente,parent_mais_recente_mesma_major,arvore_limpa
+2026-11-09 10:07:26,openrewrite,d0d758d,21.0.13,3.6.3,falha_compilacao,1,76.5,N/D,N/D,N/D,N/D,N/D,N/D,26,17,10,3,3.5.16,4.1.2,3.5.16,sim

@@ -1,0 +1,19 @@
+# Receita composta da F3 do TCC.
+# Só reúne receitas prontas do catálogo do OpenRewrite (nenhuma receita própria em código).
+# A ordem está justificada em analise-dependencias.md, seção "Ordem das receitas".
+#
+# Artefatos (Maven Central):
+#   org.openrewrite.maven:rewrite-maven-plugin:6.46.1   (Apache-2.0)
+#   org.openrewrite.recipe:rewrite-spring:6.37.0        (Moderne Source Available License)
+#   org.openrewrite.recipe:rewrite-migrate-java:3.42.0  (Moderne Source Available License)
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: tcc.ModernizacaoPetClinic
+displayName: TCC - Modernização do Spring PetClinic REST
+description: >-
+  Troca o Springfox pelo SpringDoc, migra para o Spring Boot 3.5 (inclui Java 17, Jakarta EE
+  e Spring Security 6) e eleva a versão do Java para 21.
+recipeList:
+  - org.openrewrite.java.springdoc.SpringFoxToSpringDoc
+  - org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+  - org.openrewrite.java.migrate.UpgradeToJava21

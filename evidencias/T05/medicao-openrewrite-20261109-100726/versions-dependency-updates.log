@@ -1,0 +1,98 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< org.springframework.samples:spring-petclinic-rest >----------
+[INFO] Building spring-petclinic-rest 2.6.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.16.2:display-dependency-updates (default-cli) @ spring-petclinic-rest ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/mysql/mysql-connector-j/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/maven-metadata.xml (6.7 kB at 6.2 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/maven-metadata.xml (8.1 kB at 7.4 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/jakarta/servlet/jakarta.servlet-api/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/jakarta/validation/jakarta.validation-api/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/jayway/jsonpath/json-path/maven-metadata.xml (1.1 kB at 859 B/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/maven-metadata.xml (6.2 kB at 4.9 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hsqldb/hsqldb/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/mysql/mysql-connector-j/maven-metadata.xml (839 B at 661 B/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/validation/jakarta.validation-api/maven-metadata.xml (675 B at 1.8 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct-processor/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/servlet/jakarta.servlet-api/maven-metadata.xml (706 B at 1.8 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/maven-metadata.xml (872 B at 2.4 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/openapitools/jackson-databind-nullable/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct/maven-metadata.xml (2.1 kB at 5.6 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hsqldb/hsqldb/maven-metadata.xml (912 B at 2.4 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springdoc/springdoc-openapi-starter-webmvc-ui/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/postgresql/postgresql/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/mapstruct/mapstruct-processor/maven-metadata.xml (2.1 kB at 5.5 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/maven-metadata.xml (12 kB at 33 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/maven-metadata.xml
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/openapitools/jackson-databind-nullable/maven-metadata.xml (788 B at 2.1 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springdoc/springdoc-openapi-starter-webmvc-ui/maven-metadata.xml (2.0 kB at 5.3 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/postgresql/postgresql/maven-metadata.xml (7.7 kB at 20 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/maven-metadata.xml (11 kB at 29 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/maven-metadata.xml (9.8 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/maven-metadata.xml (11 kB at 24 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/maven-metadata.xml (11 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/maven-metadata.xml (9.7 kB at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jdbc-core/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/maven-metadata.xml (11 kB at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-security/maven-metadata.xml (11 kB at 28 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/maven-metadata.xml (9.7 kB at 26 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/maven-metadata.xml (11 kB at 28 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-test/maven-metadata.xml (9.0 kB at 25 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jdbc-core/maven-metadata.xml (493 B at 775 B/s)
+[INFO] The following dependencies in Dependencies have newer versions:
+[INFO]   com.fasterxml.jackson.core:jackson-core ............. 2.21.4 -> 2.23.0
+[INFO]   com.fasterxml.jackson.core:jackson-databind ......... 2.21.4 -> 2.23.0
+[INFO]   com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ...
+[INFO]                                                         2.21.4 -> 2.23.0
+[INFO]   com.jayway.jsonpath:json-path ......................... 2.9.0 -> 3.0.0
+[INFO]   com.mysql:mysql-connector-j ......................... 9.7.0 -> 26.10.0
+[INFO]   jakarta.servlet:jakarta.servlet-api ................... 6.0.0 -> 6.1.0
+[INFO]   jakarta.validation:jakarta.validation-api ............. 3.0.2 -> 3.1.1
+[INFO]   org.hsqldb:hsqldb ..................................... 2.7.3 -> 2.7.4
+[INFO]   org.mockito:mockito-core ............................ 5.17.0 -> 5.24.0
+[INFO]   org.openapitools:jackson-databind-nullable ........... 0.2.1 -> 0.2.13
+[INFO]   org.postgresql:postgresql ......................... 42.7.11 -> 42.7.14
+[INFO]   org.springdoc:springdoc-openapi-starter-webmvc-ui .... 2.8.17 -> 3.2.0
+[INFO]   org.springframework.boot:spring-boot-starter-actuator ...
+[INFO]                                                          3.5.16 -> 4.1.2
+[INFO]   org.springframework.boot:spring-boot-starter-cache ... 3.5.16 -> 4.1.2
+[INFO]   org.springframework.boot:spring-boot-starter-data-jpa ...
+[INFO]                                                          3.5.16 -> 4.1.2
+[INFO]   org.springframework.boot:spring-boot-starter-jdbc .... 3.5.16 -> 4.1.2
+[INFO]   org.springframework.boot:spring-boot-starter-security ...
+[INFO]                                                          3.5.16 -> 4.1.2
+[INFO]   org.springframework.boot:spring-boot-starter-test .... 3.5.16 -> 4.1.2
+[INFO]   org.springframework.boot:spring-boot-starter-validation ...
+[INFO]                                                          3.5.16 -> 4.1.2
+[INFO]   org.springframework.boot:spring-boot-starter-web ..... 3.5.16 -> 4.1.2
+[INFO]   org.springframework.security:spring-security-test .... 6.5.11 -> 7.1.2
+[INFO] 
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/maven-metadata.xml (11 kB at 29 kB/s)
+[INFO] The following dependencies in pluginManagement of plugins have newer versions:
+[INFO]   org.springframework.boot:spring-boot-maven-plugin .... 3.5.16 -> 4.1.2
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.859 s
+[INFO] Finished at: 2026-11-09T10:08:50-03:00
+[INFO] ------------------------------------------------------------------------

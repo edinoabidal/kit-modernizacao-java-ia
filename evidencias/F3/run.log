@@ -1,0 +1,1375 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< org.springframework.samples:spring-petclinic-rest >----------
+[INFO] Building spring-petclinic-rest 2.6.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> rewrite-maven-plugin:6.46.1:run (default-cli) > process-test-classes @ spring-petclinic-rest >>>
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ spring-petclinic-rest ---
+[INFO] argLine set to -javaagent:/home/<usuario>/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/jacoco.exec,excludes=**/org/springframework/samples/petclinic/dto/**
+[INFO] 
+[INFO] --- openapi-generator-maven-plugin:5.2.1:generate (default) @ spring-petclinic-rest ---
+[INFO] Generating with dryRun=false
+[INFO] No .openapi-generator-ignore file found.
+[INFO] OpenAPI Generator: spring (server)
+[INFO] Generator 'spring' is considered stable.
+[INFO] ----------------------------------
+[WARNING] java8 option has been deprecated as it's set to true by default (JDK7 support has been deprecated)
+[INFO] Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[INFO] NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[INFO] Invoker Package Name, originally not set, is now derived from model package name: org.springframework.samples.petclinic
+[INFO] Processing operation failingRequest
+[INFO] Processing operation listOwners
+[INFO] Processing operation addOwner
+[INFO] Processing operation getOwner
+[INFO] Processing operation updateOwner
+[INFO] Processing operation addPet
+[INFO] Processing operation getPet
+[INFO] Processing operation updatePet
+[INFO] Processing operation addVisit
+[INFO] Processing operation listPetTypes
+[INFO] Processing operation listVets
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/OwnerAllOfDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/OwnerDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/OwnerFieldsDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/PetAllOfDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/PetDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/PetFieldsDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/PetTypeDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/RestErrorDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/RoleDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/SpecialtyDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/UserDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/ValidationMessageDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/VetDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/VisitAllOfDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/VisitDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/VisitFieldsDto.java
+[INFO] Skipping generation of APIs.
+[INFO] Skipping generation of supporting files.
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-source) @ spring-petclinic-rest ---
+[INFO] Source directory: /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java added.
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.6.2:build-info (default) @ spring-petclinic-rest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ spring-petclinic-rest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 4 resources
+[INFO] Copying 13 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ spring-petclinic-rest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 99 source files to /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ spring-petclinic-rest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ spring-petclinic-rest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/test-classes
+[INFO] 
+[INFO] <<< rewrite-maven-plugin:6.46.1:run (default-cli) < process-test-classes @ spring-petclinic-rest <<<
+[INFO] 
+[INFO] 
+[INFO] --- rewrite-maven-plugin:6.46.1:run (default-cli) @ spring-petclinic-rest ---
+[INFO] Using active recipe(s) [tcc.ModernizacaoPetClinic]
+[INFO] Using active styles(s) []
+[INFO] Validating active recipes...
+[INFO] Project [spring-petclinic-rest] Resolving Poms...
+[INFO] Project [spring-petclinic-rest] Parsing source files
+[INFO] Running recipe(s)...
+[WARNING] Failed to access maven repository https://repository.apache.org/snapshots due to: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] Failed to access maven repository https://repo.spring.io/milestone due to: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] Failed to access maven repository https://oss.sonatype.org/content/repositories/snapshots due to: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] Failed to access maven repository https://central.sonatype.com/repository/maven-snapshots due to: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] Changes have been made to pom.xml by:
+[WARNING]     org.openrewrite.java.springdoc.SpringFoxToSpringDoc
+[WARNING]         org.openrewrite.java.springdoc.ReplaceSpringFoxDependencies
+[WARNING]             org.openrewrite.java.dependencies.RemoveDependency
+[WARNING]             org.openrewrite.java.dependencies.AddDependency
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                                 org.openrewrite.java.spring.framework.UpgradeSpringFramework_5_0
+[WARNING]                                                                     org.openrewrite.java.spring.boot2.MigrateHibernateConstraintsToJavax
+[WARNING]                                                                         org.openrewrite.java.spring.boot2.MaybeAddJavaxValidationApi
+[WARNING]                                                                             org.openrewrite.java.dependencies.AddDependency
+[WARNING]                                             org.openrewrite.java.dependencies.ChangeDependency
+[WARNING]                                         org.openrewrite.maven.UpgradeParentVersion
+[WARNING]                                     org.openrewrite.maven.UpgradeParentVersion
+[WARNING]                                     org.openrewrite.java.dependencies.UpgradeDependencyVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                     org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeToJava8
+[WARNING]                                             org.openrewrite.java.migrate.UpgradeToJava7
+[WARNING]                                                 org.openrewrite.java.migrate.UpgradeToJava6
+[WARNING]                                                     org.openrewrite.java.migrate.jacoco.UpgradeJaCoCo
+[WARNING]                                                         org.openrewrite.maven.UpgradePluginVersion
+[WARNING]                                             org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                                 org.openrewrite.maven.UpdateMavenProjectPropertyJavaVersion
+[WARNING]                                         org.openrewrite.java.migrate.javax.AddJaxbDependenciesWithRuntime
+[WARNING]                                             org.openrewrite.java.migrate.javax.AddJaxbAPIDependencies
+[WARNING]                                                 org.openrewrite.java.dependencies.ChangeDependency
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                             org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                                 org.openrewrite.maven.UpdateMavenProjectPropertyJavaVersion
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                             org.openrewrite.maven.UpdateMavenProjectPropertyJavaVersion
+[WARNING]                                     org.openrewrite.java.dependencies.UpgradeDependencyVersion
+[WARNING]                                 org.openrewrite.maven.UpgradeParentVersion
+[WARNING]                                 org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                             org.openrewrite.java.migrate.jakarta.JavaxServletToJakartaServlet
+[WARNING]                                                 org.openrewrite.java.dependencies.AddDependency
+[WARNING]                                             org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                                 org.openrewrite.java.dependencies.ChangeDependency
+[WARNING]                                 org.openrewrite.java.springdoc.UpgradeSpringDoc_2
+[WARNING]                                     org.openrewrite.java.dependencies.ChangeDependency
+[WARNING]                             org.openrewrite.maven.UpgradeParentVersion
+[WARNING]                             org.openrewrite.java.dependencies.UpgradeDependencyVersion
+[WARNING]                         org.openrewrite.maven.UpgradeParentVersion
+[WARNING]                         org.openrewrite.java.dependencies.UpgradeDependencyVersion
+[WARNING]                     org.openrewrite.maven.UpgradeParentVersion
+[WARNING]                     org.openrewrite.java.dependencies.UpgradeDependencyVersion
+[WARNING]                 org.openrewrite.maven.UpgradeParentVersion
+[WARNING]                 org.openrewrite.java.dependencies.UpgradeDependencyVersion
+[WARNING]             org.openrewrite.maven.UpgradeParentVersion: {groupId=org.springframework.boot, artifactId=spring-boot-starter-parent, newVersion=3.5.x}
+[WARNING]             org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                         org.openrewrite.maven.UpdateMavenProjectPropertyJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/service/ClinicServiceImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoAutowiredOnConstructor
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/Person.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/Role.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/Specialty.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/Visit.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/User.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/PetType.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/Vet.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxXmlBindMigrationToJakartaXmlBind
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/Pet.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/model/Owner.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/util/ApplicationSwaggerConfig.java by:
+[WARNING]     org.openrewrite.java.springdoc.SpringFoxToSpringDoc
+[WARNING]         org.openrewrite.java.AddCommentToMethodInvocations: {comment=TODO: The transformation of Docket to OpenAPI is too complex to be adequately handled in a recipe. See https://springdoc.org/migrating-from-springfox.html for guidance., methodPattern=springfox.documentation.spring.web.plugins.Docket <constructor>(..)}
+[WARNING]         org.openrewrite.java.springdoc.SwaggerToSpringDoc
+[WARNING]             org.openrewrite.java.RemoveAnnotation
+[WARNING]             org.openrewrite.java.spring.doc.MigrateDocketBeanToGroupedOpenApiBean
+[WARNING]         org.openrewrite.java.spring.doc.ApiInfoBuilderToInfo
+[WARNING]             org.openrewrite.java.ChangeType: {oldFullyQualifiedTypeName=springfox.documentation.service.ApiInfo, newFullyQualifiedTypeName=io.swagger.v3.oas.models.info.Info, ignoreDefinition=true}
+[WARNING]         org.openrewrite.java.springdoc.CleanupRemainingSpringfox
+[WARNING]             org.openrewrite.staticanalysis.RemoveUnusedPrivateMethods
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                     org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                             org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]             org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/security/DisableSecurityConfig.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.security5.UpgradeSpringSecurity_5_7
+[WARNING]                                     org.openrewrite.java.spring.security5.WebSecurityConfigurerAdapter
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.security6.UpgradeSpringSecurity_6_0
+[WARNING]                                 org.openrewrite.java.spring.security5.UpgradeSpringSecurity_5_8
+[WARNING]                                     org.openrewrite.java.spring.boot2.HttpSecurityLambdaDsl
+[WARNING]                                     org.openrewrite.java.spring.security5.AuthorizeHttpRequests
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/security/BasicAuthenticationConfig.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.security5.UpgradeSpringSecurity_5_7
+[WARNING]                                     org.openrewrite.java.spring.security5.WebSecurityConfigurerAdapter
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.security6.UpgradeSpringSecurity_6_0
+[WARNING]                                 org.openrewrite.java.spring.security5.UpgradeSpringSecurity_5_8
+[WARNING]                                     org.openrewrite.java.spring.boot2.HttpSecurityLambdaDsl
+[WARNING]                                     org.openrewrite.java.spring.security5.AuthorizeHttpRequests
+[WARNING]                                     org.openrewrite.java.spring.security5.ReplaceGlobalMethodSecurityWithMethodSecurity
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/springdatajpa/SpringDataSpecialtyRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/springdatajpa/SpringDataPetRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/springdatajpa/SpringDataVisitRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/springdatajpa/SpringDataPetTypeRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaSpecialtyRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaPetTypeRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaUserRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaOwnerRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaVisitRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaVetRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaPetRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxPersistenceToJakartaPersistence
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcOwnerRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoAutowiredOnConstructor
+[WARNING]                                         org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrdering
+[WARNING]                                             org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrderingUnconditionally
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxTransactionMigrationToJakartaTransaction
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcPetRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoAutowiredOnConstructor
+[WARNING]                                         org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrdering
+[WARNING]                                             org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrderingUnconditionally
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcPetTypeRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoAutowiredOnConstructor
+[WARNING]                                         org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrdering
+[WARNING]                                             org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrderingUnconditionally
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcVetRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoAutowiredOnConstructor
+[WARNING]                                         org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrdering
+[WARNING]                                             org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrderingUnconditionally
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcVisitRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoAutowiredOnConstructor
+[WARNING]                                         org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrdering
+[WARNING]                                             org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrderingUnconditionally
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcUserRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoAutowiredOnConstructor
+[WARNING]                                         org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrdering
+[WARNING]                                             org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrderingUnconditionally
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcSpecialtyRepositoryImpl.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoAutowiredOnConstructor
+[WARNING]                                         org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrdering
+[WARNING]                                             org.openrewrite.java.spring.boot2.DatabaseComponentAndBeanInitializationOrderingUnconditionally
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/rest/VetRestController.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoRequestMappingAnnotation
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxTransactionMigrationToJakartaTransaction
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/rest/VisitRestController.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoRequestMappingAnnotation
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxTransactionMigrationToJakartaTransaction
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/rest/RootRestController.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxServletToJakartaServlet
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/rest/OwnerRestController.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoRequestMappingAnnotation
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxTransactionMigrationToJakartaTransaction
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/rest/PetRestController.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoRequestMappingAnnotation
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxTransactionMigrationToJakartaTransaction
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/rest/UserRestController.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoRequestMappingAnnotation
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/rest/SpecialtyRestController.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoRequestMappingAnnotation
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxTransactionMigrationToJakartaTransaction
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/java/org/springframework/samples/petclinic/rest/PetTypeRestController.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                             org.openrewrite.java.spring.boot2.SpringBoot2BestPractices
+[WARNING]                                                                 org.openrewrite.java.spring.NoRequestMappingAnnotation
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxTransactionMigrationToJakartaTransaction
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/main/resources/application.properties by:
+[WARNING]     org.openrewrite.java.springdoc.SpringFoxToSpringDoc
+[WARNING]         org.openrewrite.java.springdoc.SwaggerToSpringDoc
+[WARNING]             org.openrewrite.java.spring.doc.MigrateDocketBeanToGroupedOpenApiBean
+[WARNING] Changes have been made to src/test/java/org/springframework/samples/petclinic/service/clinicService/AbstractClinicServiceTests.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]             org.openrewrite.java.migrate.util.SequencedCollection
+[WARNING]                 org.openrewrite.java.migrate.util.ListFirstAndLast
+[WARNING] Changes have been made to src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                             org.openrewrite.java.spring.framework.UpgradeSpringFramework_6_0
+[WARNING]                                 org.openrewrite.java.migrate.jakarta.JakartaEE10
+[WARNING]                                     org.openrewrite.java.migrate.jakarta.JavaxMigrationToJakarta
+[WARNING]                                         org.openrewrite.java.migrate.jakarta.JavaxValidationMigrationToJakartaValidation
+[WARNING]                                             org.openrewrite.java.ChangePackage
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING] Changes have been made to src/test/java/org/springframework/samples/petclinic/rest/VisitRestControllerTests.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]             org.openrewrite.java.migrate.util.SequencedCollection
+[WARNING]                 org.openrewrite.java.migrate.util.ListFirstAndLast
+[WARNING] Changes have been made to src/test/java/org/springframework/samples/petclinic/rest/OwnerRestControllerTests.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]             org.openrewrite.java.migrate.util.SequencedCollection
+[WARNING]                 org.openrewrite.java.migrate.util.ListFirstAndLast
+[WARNING] Changes have been made to src/test/java/org/springframework/samples/petclinic/rest/VetRestControllerTests.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]             org.openrewrite.java.migrate.util.SequencedCollection
+[WARNING]                 org.openrewrite.java.migrate.util.ListFirstAndLast
+[WARNING] Changes have been made to src/test/java/org/springframework/samples/petclinic/rest/SpecialtyRestControllerTests.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]             org.openrewrite.java.migrate.util.SequencedCollection
+[WARNING]                 org.openrewrite.java.migrate.util.ListFirstAndLast
+[WARNING] Changes have been made to src/test/java/org/springframework/samples/petclinic/rest/PetTypeRestControllerTests.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]             org.openrewrite.java.migrate.util.SequencedCollection
+[WARNING]                 org.openrewrite.java.migrate.util.ListFirstAndLast
+[WARNING] Changes have been made to src/test/java/org/springframework/samples/petclinic/rest/PetRestControllerTests.java by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.Java8toJava11
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeBuildToJava11
+[WARNING]                                         org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]                                 org.openrewrite.java.migrate.UpgradeBuildToJava17
+[WARNING]                                     org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.java.migrate.UpgradeBuildToJava21
+[WARNING]                 org.openrewrite.java.migrate.UpgradeJavaVersion
+[WARNING]             org.openrewrite.java.migrate.util.SequencedCollection
+[WARNING]                 org.openrewrite.java.migrate.util.ListFirstAndLast
+[WARNING] Changes have been made to src/test/resources/application.properties by:
+[WARNING]     org.openrewrite.java.springdoc.SpringFoxToSpringDoc
+[WARNING]         org.openrewrite.java.springdoc.SwaggerToSpringDoc
+[WARNING]             org.openrewrite.java.spring.doc.MigrateDocketBeanToGroupedOpenApiBean
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+[WARNING]                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_6
+[WARNING]                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_5
+[WARNING]                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_4
+[WARNING]                                                 org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_3
+[WARNING]                                                     org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_2
+[WARNING]                                                         org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_1
+[WARNING]                                                             org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_0
+[WARNING]                                                                 org.openrewrite.java.spring.boot2.SpringBootProperties_2_0
+[WARNING]                                                                     org.openrewrite.java.spring.CommentOutSpringPropertyKey
+[WARNING] Changes have been made to .github/workflows/maven-build.yml by:
+[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
+[WARNING]         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4
+[WARNING]             org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3
+[WARNING]                 org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2
+[WARNING]                     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_1
+[WARNING]                         org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+[WARNING]                             org.openrewrite.java.migrate.UpgradeToJava17
+[WARNING]                                 org.openrewrite.java.migrate.UpgradePluginsForJava17
+[WARNING]                                     org.openrewrite.github.SetupJavaUpgradeJavaVersion
+[WARNING]         org.openrewrite.java.migrate.UpgradeToJava21
+[WARNING]             org.openrewrite.github.SetupJavaUpgradeJavaVersion
+[WARNING] Please review and commit the results.
+[WARNING] Estimate time saved: 9h 24m
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:48 min
+[INFO] Finished at: 2026-11-05T18:48:32-03:00
+[INFO] ------------------------------------------------------------------------
