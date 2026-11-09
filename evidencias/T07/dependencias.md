@@ -11,17 +11,17 @@
 
 ## 1. Dependências desatualizadas na mesma major
 
-O `medir.py` registrou `deps_desatualizadas_mesma_major=10`, mas o relatório tem **11** dependências.
-O nome `com.fasterxml.jackson.datatype:jackson-datatype-jsr310` é longo, e o `versions-maven-plugin`
-quebra essa entrada em duas linhas: o nome fica numa e as versões na seguinte. O script só conta as
-linhas que trazem o nome e a seta `->` juntos, então essa entrada fica de fora. Pela regra 5, o
-script não foi alterado, e a diferença fica registrada aqui.
+O relatório tem **11** dependências desatualizadas na mesma major. Na primeira execução, o `medir.py`
+registrou 10, porque o `versions-maven-plugin` quebra a entrada do
+`com.fasterxml.jackson.datatype:jackson-datatype-jsr310` em duas linhas: o nome fica numa e as versões
+na seguinte. O script só contava as linhas com o nome e a seta `->` juntos. A contagem foi corrigida
+depois, como descreve a seção 4.
 
 | Dependência | Versão atual | Mais recente na mesma major | Origem da versão |
 |---|---|---|---|
 | `com.fasterxml.jackson.core:jackson-core` | 2.21.4 | 2.23.0 | BOM do Boot 3.5.16 (`jackson-bom.version`) |
 | `com.fasterxml.jackson.core:jackson-databind` | 2.21.4 | 2.23.0 | BOM do Boot 3.5.16 (`jackson-bom.version`) |
-| `com.fasterxml.jackson.datatype:jackson-datatype-jsr310` (fora da contagem do script) | 2.21.4 | 2.23.0 | BOM do Boot 3.5.16 (`jackson-bom.version`) |
+| `com.fasterxml.jackson.datatype:jackson-datatype-jsr310` (entrada quebrada em duas linhas) | 2.21.4 | 2.23.0 | BOM do Boot 3.5.16 (`jackson-bom.version`) |
 | `com.jayway.jsonpath:json-path` | 2.9.0 | 2.10.0 | BOM do Boot 3.5.16 (`json-path.version`) |
 | `jakarta.servlet:jakarta.servlet-api` | 6.0.0 | 6.1.0 | BOM do Boot 3.5.16 (`jakarta-servlet.version`) |
 | `jakarta.validation:jakarta.validation-api` | 3.0.2 | 3.1.1 | BOM do Boot 3.5.16 (`jakarta-validation.version`) |
@@ -35,10 +35,10 @@ Das 11, 9 vêm do BOM e mudam junto com o parent. As 2 fixadas no `pom.xml` são
 `jackson-databind-nullable` e o `springdoc`. A F4 manteve o springdoc na linha 2.8, que é a do Boot
 3.4/3.5 (relatório da F4).
 
-A mesma quebra de linha acontece na lista "qualquer major": o relatório tem 21 dependências e mais
-o `spring-boot-maven-plugin` no `pluginManagement`, e o script contou 17. Os 5 nomes quebrados são o
-`jackson-datatype-jsr310` e os starters `actuator`, `data-jpa`, `security` e `validation` do Boot. Os relatórios do legado também têm 5 entradas
-quebradas, então a contagem fica abaixo do real nas duas fases. O CSV não foi corrigido.
+A mesma quebra acontece na lista de qualquer major. O relatório tem 21 dependências e mais o
+`spring-boot-maven-plugin` no `pluginManagement`, 22 entradas no total, e a primeira execução contou 17.
+Os 5 nomes quebrados são o `jackson-datatype-jsr310` e os starters `actuator`, `data-jpa`, `security`
+e `validation` do Boot.
 
 ## 2. Versões fixadas no `pom.xml` final
 
@@ -93,3 +93,36 @@ lançamentos de 2024 a 2026. O `jib-maven-plugin` 1.3.0, o `build-helper-maven-p
   e `Assert`), conferidas no bytecode com `javap`.
 - Trocar ou remover essa dependência mudaria código de repositório, o que a regra 1 não permite.
   O ponto fica registrado como risco de manutenção, sem mudança.
+
+## 4. Correção da contagem no `medir.py`
+
+Com autorização do autor, como exceção à regra 5 limitada a esse ponto, o `medir.py` passou a juntar
+as entradas que o `versions-maven-plugin` quebra em duas linhas antes de contar. A correção é a função
+`_juntar_linhas_quebradas`, usada na contagem de dependências e na de plugins. O `README-medir.md`
+registra a mudança.
+
+As três medições foram recalculadas com as funções corrigidas, a partir das saídas brutas guardadas de
+cada execução, sem rodar os builds de novo (`recalcular-contagens.py`, saída em `recalculo-contagens.txt`).
+
+| Medição | Coluna | Antes | Depois | Linhas `->` nos relatórios | Entradas quebradas |
+|---|---|---:|---:|---:|---:|
+| F1 (legado, 517a399) | deps_desatualizadas | 18 | 23 | 23 | 5 |
+| | deps_desatualizadas_mesma_major | 18 | 23 | 23 | 5 |
+| | plugins_desatualizados | 4 | 4 | 4 plugins únicos | 0 |
+| T05 (openrewrite, d0d758d) | deps_desatualizadas | 17 | 22 | 22 | 5 |
+| | deps_desatualizadas_mesma_major | 10 | 11 | 11 | 1 |
+| | plugins_desatualizados | 3 | 3 | 3 plugins únicos | 0 |
+| T07 (final, 7c0326d) | deps_desatualizadas | 17 | 22 | 22 | 5 |
+| | deps_desatualizadas_mesma_major | 10 | 11 | 11 | 1 |
+| | plugins_desatualizados | 2 | 2 | 2 plugins únicos | 0 |
+
+As contagens novas batem com as linhas dos relatórios: no T07, 22 em qualquer major e 11 na mesma
+major. Nenhum relatório de plugins tem entradas quebradas, então os números de plugins não mudaram.
+
+Onde ficou registrado:
+
+- `medicoes/medicoes.csv`: as três linhas com os valores corrigidos, sem mudar as outras colunas.
+- `medicoes/medicoes-v3.csv`: cópia do `medicoes.csv` antes da correção.
+- `medicoes/correcao-contagem-dependencias.csv`: o valor antigo e o corrigido de cada coluna em cada linha.
+- `linha-medicoes.csv` e `saida-medir.txt` do T05 e do T07 ficaram como estavam, porque são a saída
+  original de cada execução.

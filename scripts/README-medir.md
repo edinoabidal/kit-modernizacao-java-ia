@@ -95,8 +95,16 @@ Em `medicoes/<fase>-<AAAAMMDD-HHMMSS>/`:
   - **`medicoes-v1.csv`** — antes das colunas `*_mesma_major`.
   - **`medicoes-v2.csv`** — quando `plugins_desatualizados` contava só o bloco
     "The following plugin updates are available".
+  - **`medicoes-v3.csv`** — antes da correção das entradas quebradas em duas linhas (abaixo).
   - **`medicoes.csv`** (atual) — `plugins_desatualizados` conta plugins únicos de
-    **qualquer** bloco (inclusive os "Require Maven X.Y.Z to use...").
+    **qualquer** bloco (inclusive os "Require Maven X.Y.Z to use..."), e as contagens de
+    dependências e plugins juntam as entradas quebradas em duas linhas.
+- Quando o `grupo:artefato` é longo, o `versions-maven-plugin` escreve o nome numa linha e as
+  versões (`atual -> nova`) na seguinte. Até a versão do `medicoes-v3.csv`, o script só contava
+  as linhas com o nome e a seta juntos e deixava essas entradas de fora. Agora ele junta as duas
+  linhas antes de contar. As três medições (legado, openrewrite e final) foram recalculadas a
+  partir das saídas brutas guardadas, sem rodar os builds de novo; os valores antigos e os
+  corrigidos estão em `correcao-contagem-dependencias.csv`.
 - A coluna `plugins_desatualizados` considera todos os blocos porque a modernização pode
   mudar a versão do Maven exigida pelo projeto; contar só o primeiro bloco deixaria as
   fases (legado × openrewrite × final) difíceis de comparar.

@@ -1,0 +1,10 @@
+data_hora,fase,commit,coluna,valor_antigo,valor_corrigido,mudou
+2026-11-03 17:44:11,legado,517a399,deps_desatualizadas,18,23,sim
+2026-11-03 17:44:11,legado,517a399,deps_desatualizadas_mesma_major,18,23,sim
+2026-11-03 17:44:11,legado,517a399,plugins_desatualizados,4,4,nao
+2026-11-09 10:07:26,openrewrite,d0d758d,deps_desatualizadas,17,22,sim
+2026-11-09 10:07:26,openrewrite,d0d758d,deps_desatualizadas_mesma_major,10,11,sim
+2026-11-09 10:07:26,openrewrite,d0d758d,plugins_desatualizados,3,3,nao
+2026-11-09 11:35:24,final,7c0326d,deps_desatualizadas,17,22,sim
+2026-11-09 11:35:24,final,7c0326d,deps_desatualizadas_mesma_major,10,11,sim
+2026-11-09 11:35:24,final,7c0326d,plugins_desatualizados,2,2,nao

@@ -338,15 +338,46 @@ def _versions_rodou_ok(saida):
     return bool(saida) and "BUILD SUCCESS" in saida
 
 
+def _juntar_linhas_quebradas(saida):
+    """
+    Junta as entradas que o versions-maven-plugin quebra em duas linhas.
+    Quando o 'grupo:artefato' e longo, o plugin escreve o nome numa linha e as
+    versoes na seguinte:
+      "[INFO]   com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ..."
+      "[INFO]                                                  2.21.4 -> 2.23.0"
+    Esta funcao junta as duas numa linha so:
+      "[INFO]   com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ... 2.21.4 -> 2.23.0"
+    As outras linhas ficam como estao.
+    """
+    nome_sem_versao = re.compile(r"^\[INFO\]\s+\S+:\S+\s+\.+\s*$")
+    continuacao = re.compile(r"^\[INFO\]\s+(\S+\s+->\s+\S+.*)$")
+    linhas = saida.splitlines()
+    resultado = []
+    i = 0
+    while i < len(linhas):
+        linha = linhas[i]
+        if nome_sem_versao.match(linha) and i + 1 < len(linhas):
+            m = continuacao.match(linhas[i + 1])
+            if m:
+                resultado.append(linha.rstrip() + " " + m.group(1))
+                i += 2
+                continue
+        resultado.append(linha)
+        i += 1
+    return "\n".join(resultado)
+
+
 def contar_deps_desatualizadas(saida):
     """
     Conta dependencias desatualizadas na saida do display-dependency-updates.
-    Contamos apenas linhas que tem 'grupo:artefato ... versao_atual -> versao_nova',
-    ou seja, que comecam com um artefato (evitando linhas de continuacao).
+    Contamos as linhas que tem 'grupo:artefato ... versao_atual -> versao_nova',
+    depois de juntar as entradas que o plugin quebra em duas linhas
+    (ver _juntar_linhas_quebradas).
     Se o comando nem rodou direito (ex.: Java invalido), devolve N/D.
     """
     if not _versions_rodou_ok(saida):
         return ND
+    saida = _juntar_linhas_quebradas(saida)
     # Ex.: "[INFO]   com.fasterxml.jackson.core:jackson-core ... 2.13.1 -> 2.22.4"
     # Exigimos ao menos um ':' (grupo:artefato) antes dos pontinhos e a seta '->'.
     padrao = re.compile(r"^\[INFO\]\s+\S+:\S+\s+\.+\s+\S+\s+->\s+\S+")
@@ -388,6 +419,7 @@ def _coletar_plugins_desatualizados(saida):
     plugins = set()
     if not saida:
         return plugins
+    saida = _juntar_linhas_quebradas(saida)
 
     # Cabecalhos que iniciam um bloco de atualizacao de plugins.
     inicio_bloco = re.compile(
