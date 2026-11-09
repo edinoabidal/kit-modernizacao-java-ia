@@ -1,0 +1,45 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< org.springframework.samples:spring-petclinic-rest >----------
+[INFO] Building spring-petclinic-rest 2.6.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.16.2:display-dependency-updates (default-cli) @ spring-petclinic-rest ---
+[INFO] The following dependencies in Dependencies have newer versions:
+[INFO]   com.fasterxml.jackson.core:jackson-core ............. 2.13.1 -> 2.22.4
+[INFO]   com.fasterxml.jackson.core:jackson-databind ......... 2.13.1 -> 2.22.4
+[INFO]   com.fasterxml.jackson.datatype:jackson-datatype-jsr310 ...
+[INFO]                                                         2.13.1 -> 2.22.4
+[INFO]   com.jayway.jsonpath:json-path ........................ 2.6.0 -> 2.10.0
+[INFO]   javax.xml.bind:jaxb-api .................. 2.3.0 -> 2.4.0-b180830.0359
+[INFO]   mysql:mysql-connector-java .......................... 8.0.27 -> 8.0.33
+[INFO]   org.hsqldb:hsqldb ..................................... 2.5.2 -> 2.7.4
+[INFO]   org.mapstruct:mapstruct ......................... 1.4.1.Final -> 1.6.3
+[INFO]   org.mapstruct:mapstruct-processor ............... 1.4.1.Final -> 1.6.3
+[INFO]   org.mockito:mockito-core ............................. 4.0.0 -> 4.11.0
+[INFO]   org.openapitools:jackson-databind-nullable ........... 0.2.1 -> 0.2.13
+[INFO]   org.postgresql:postgresql .......................... 42.3.1 -> 42.7.14
+[INFO]   org.springframework.boot:spring-boot-starter-actuator ...
+[INFO]                                                          2.6.2 -> 2.7.18
+[INFO]   org.springframework.boot:spring-boot-starter-aop ..... 2.6.2 -> 2.7.18
+[INFO]   org.springframework.boot:spring-boot-starter-cache ... 2.6.2 -> 2.7.18
+[INFO]   org.springframework.boot:spring-boot-starter-data-jpa ...
+[INFO]                                                          2.6.2 -> 2.7.18
+[INFO]   org.springframework.boot:spring-boot-starter-jdbc .... 2.6.2 -> 2.7.18
+[INFO]   org.springframework.boot:spring-boot-starter-security ...
+[INFO]                                                          2.6.2 -> 2.7.18
+[INFO]   org.springframework.boot:spring-boot-starter-test .... 2.6.2 -> 2.7.18
+[INFO]   org.springframework.boot:spring-boot-starter-validation ...
+[INFO]                                                          2.6.2 -> 2.7.18
+[INFO]   org.springframework.boot:spring-boot-starter-web ..... 2.6.2 -> 2.7.18
+[INFO]   org.springframework.security:spring-security-test .... 5.6.1 -> 5.8.16
+[INFO] 
+[INFO] The following dependencies in pluginManagement of plugins have newer versions:
+[INFO]   org.springframework.boot:spring-boot-maven-plugin .... 2.6.2 -> 2.7.18
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.433 s
+[INFO] Finished at: 2026-11-03T17:44:50-03:00
+[INFO] ------------------------------------------------------------------------

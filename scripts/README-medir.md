@@ -83,7 +83,7 @@ Em `medicoes/<fase>-<AAAAMMDD-HHMMSS>/`:
 | `deps_declaradas` | Nº de `<dependency>` na seção `<dependencies>` raiz do `pom.xml`. |
 | `deps_desatualizadas` | Nº de dependências com versão estável mais nova disponível (qualquer major). |
 | `deps_desatualizadas_mesma_major` | Nº de dependências com atualização **dentro da mesma versão major** (`allowMajorUpdates=false`). |
-| `plugins_desatualizados` | Nº de plugins **únicos** (`groupId:artifactId`) com versão mais nova em **qualquer** bloco de atualização: o bloco "plugin updates are available" **e** os blocos "Require Maven X.Y.Z to use...". Cada plugin conta só uma vez. |
+| `plugins_desatualizados` | Nº de plugins **únicos** (`groupId:artifactId`) com versão mais nova em **qualquer** bloco de atualização: o bloco "plugin updates are available" **e** os blocos "Require Maven X.Y.Z to use...". Cada plugin conta só uma vez, e só entram as linhas em que a versão nova é **maior** que a atual (os blocos "Require Maven" também listam versões anteriores). Plugins sem `<version>` no `pom.xml`, com a versão vinda do parent, podem não aparecer no relatório. |
 | `parent_atual` | Versão atual do parent (`spring-boot-starter-parent`). |
 | `parent_mais_recente` | Versão estável mais recente do parent disponível (qualquer major). |
 | `parent_mais_recente_mesma_major` | Versão estável mais recente do parent **dentro da mesma major**. |
@@ -96,9 +96,14 @@ Em `medicoes/<fase>-<AAAAMMDD-HHMMSS>/`:
   - **`medicoes-v2.csv`** — quando `plugins_desatualizados` contava só o bloco
     "The following plugin updates are available".
   - **`medicoes-v3.csv`** — antes da correção das entradas quebradas em duas linhas (abaixo).
+  - **`medicoes-v4.csv`** — antes da correção dos plugins: os blocos "Require Maven" também
+    listam versões **anteriores** à usada (ex.: `jacoco 0.8.16 -> 0.8.2`), e o script contava
+    essas linhas como atualização.
   - **`medicoes.csv`** (atual) — `plugins_desatualizados` conta plugins únicos de
     **qualquer** bloco (inclusive os "Require Maven X.Y.Z to use..."), e as contagens de
-    dependências e plugins juntam as entradas quebradas em duas linhas.
+    dependências e plugins juntam as entradas quebradas em duas linhas, e os plugins só contam
+    quando a versão nova é maior que a atual. A errata das duas correções está em `ERRATA.md`,
+    na raiz do kit.
 - Quando o `grupo:artefato` é longo, o `versions-maven-plugin` escreve o nome numa linha e as
   versões (`atual -> nova`) na seguinte. Até a versão do `medicoes-v3.csv`, o script só contava
   as linhas com o nome e a seta juntos e deixava essas entradas de fora. Agora ele junta as duas

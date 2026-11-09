@@ -78,7 +78,7 @@ INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFact
 INFO  QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
 WARN  UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 2ff8d9e3-0fd8-49ba-bac8-49e28c1d2474
+Using generated security password: <removida>
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 

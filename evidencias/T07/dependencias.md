@@ -108,21 +108,34 @@ cada execução, sem rodar os builds de novo (`recalcular-contagens.py`, saída 
 |---|---|---:|---:|---:|---:|
 | F1 (legado, 517a399) | deps_desatualizadas | 18 | 23 | 23 | 5 |
 | | deps_desatualizadas_mesma_major | 18 | 23 | 23 | 5 |
-| | plugins_desatualizados | 4 | 4 | 4 plugins únicos | 0 |
+| | plugins_desatualizados | 4 | 4 | 4 plugins com versão maior | 0 |
 | T05 (openrewrite, d0d758d) | deps_desatualizadas | 17 | 22 | 22 | 5 |
 | | deps_desatualizadas_mesma_major | 10 | 11 | 11 | 1 |
-| | plugins_desatualizados | 3 | 3 | 3 plugins únicos | 0 |
+| | plugins_desatualizados | 3 | **2** | 2 plugins com versão maior (jacoco só com versões anteriores) | 0 |
 | T07 (final, 7c0326d) | deps_desatualizadas | 17 | 22 | 22 | 5 |
 | | deps_desatualizadas_mesma_major | 10 | 11 | 11 | 1 |
-| | plugins_desatualizados | 2 | 2 | 2 plugins únicos | 0 |
+| | plugins_desatualizados | 2 | **1** | 1 plugin com versão maior (jacoco só com versões anteriores) | 0 |
 
 As contagens novas batem com as linhas dos relatórios: no T07, 22 em qualquer major e 11 na mesma
-major. Nenhum relatório de plugins tem entradas quebradas, então os números de plugins não mudaram.
+major. Nenhum relatório de plugins tem entradas quebradas.
+
+Numa segunda correção, também autorizada pelo autor, os plugins passaram a contar só quando a
+versão nova é maior que a atual. Os blocos "Require Maven X para usar..." do relatório listam também
+versões anteriores: no T05 e no T07, o `jacoco-maven-plugin` 0.8.16, que é a versão mais recente,
+aparecia com `0.8.16 -> 0.8.2` e `0.8.16 -> 0.6.3...` e era contado. Com a correção, o T05 passa de 3
+para 2 (jib e openapi-generator) e o T07, de 2 para 1 (só o jib). O legado continua com 4, porque
+os quatro plugins têm versão maior disponível. O `build-helper-maven-plugin` 3.2.0 da versão final
+não aparece no relatório, porque não tem `<version>` no `pom.xml` (ver a seção 2); esse limite do
+indicador fica registrado.
+
+A errata das duas correções, com o caminho do relatório bruto até a tabela do TCC, está em
+`ERRATA.md`, na raiz do kit.
 
 Onde ficou registrado:
 
 - `medicoes/medicoes.csv`: as três linhas com os valores corrigidos, sem mudar as outras colunas.
-- `medicoes/medicoes-v3.csv`: cópia do `medicoes.csv` antes da correção.
+- `medicoes/medicoes-v3.csv`: cópia do `medicoes.csv` antes da correção das dependências.
+- `medicoes/medicoes-v4.csv`: cópia do `medicoes.csv` depois da correção das dependências e antes da correção dos plugins.
 - `medicoes/correcao-contagem-dependencias.csv`: o valor antigo e o corrigido de cada coluna em cada linha.
 - `linha-medicoes.csv` e `saida-medir.txt` do T05 e do T07 ficaram como estavam, porque são a saída
   original de cada execução.

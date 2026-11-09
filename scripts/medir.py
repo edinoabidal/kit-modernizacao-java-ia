@@ -401,6 +401,8 @@ def contar_plugins_desatualizados(saida):
       - "Require Maven X.Y.Z to use the following plugin updates:" (exigem um Maven mais novo)
     Isso e importante porque a modernizacao pode mudar a versao do Maven exigida; contar
     todos os blocos deixa as fases comparaveis.
+    Os blocos "Require Maven ..." tambem listam versoes ANTERIORES a usada
+    (ex.: "0.8.16 -> 0.8.2"). So contamos a linha quando a versao nova e MAIOR que a atual.
 
     Devolve o numero de plugins unicos. Se o comando nem rodou direito, devolve N/D.
     """
@@ -408,6 +410,21 @@ def contar_plugins_desatualizados(saida):
         return ND
     plugins = _coletar_plugins_desatualizados(saida)
     return len(plugins)
+
+
+def _versao_maior(nova, atual):
+    """
+    Diz se a versao 'nova' e maior que a 'atual', comparando os numeros na ordem
+    (ex.: "0.8.16" > "0.8.2"; "0.6.3.201306030806" < "0.8.16").
+    Partes que nao sao numeros (ex.: "RELEASE") sao ignoradas na comparacao.
+    """
+    def numeros(versao):
+        return [int(n) for n in re.findall(r"\d+", versao)]
+    a, b = numeros(nova), numeros(atual)
+    tamanho = max(len(a), len(b))
+    a += [0] * (tamanho - len(a))
+    b += [0] * (tamanho - len(b))
+    return a > b
 
 
 def _coletar_plugins_desatualizados(saida):
@@ -434,9 +451,10 @@ def _coletar_plugins_desatualizados(saida):
         if not dentro:
             continue
         # Dentro de um bloco: tentamos casar uma linha "grupo:artefato ... atual -> nova".
-        m = re.search(r"^\[INFO\]\s+(\S+:\S+)\s+\.+\s+\S+\s+->\s+\S+", linha)
+        m = re.search(r"^\[INFO\]\s+(\S+:\S+)\s+\.+\s+(\S+)\s+->\s+(\S+)", linha)
         if m:
-            plugins.add(m.group(1))
+            if _versao_maior(m.group(3), m.group(2)):
+                plugins.add(m.group(1))
             continue
         # Se a linha nao e de plugin e tambem nao e um novo cabecalho de bloco,
         # consideramos que o bloco atual terminou (ex.: WARNING/ERROR/BUILD/linha vazia).

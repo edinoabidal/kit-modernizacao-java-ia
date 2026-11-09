@@ -1,4 +1,4 @@
 fase,pasta,deps_desatualizadas,deps_desatualizadas_mesma_major,plugins_desatualizados
 legado,legado-20261103-174411,23,23,4
-openrewrite,openrewrite-20261109-100726,22,11,3
-final,final-20261109-113524,22,11,2
+openrewrite,openrewrite-20261109-100726,22,11,2
+final,final-20261109-113524,22,11,1

@@ -1,0 +1,52 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< org.springframework.samples:spring-petclinic-rest >----------
+[INFO] Building spring-petclinic-rest 2.6.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- versions-maven-plugin:2.16.2:display-plugin-updates (default-cli) @ spring-petclinic-rest ---
+[INFO] 
+[INFO] The following plugin updates are available:
+[INFO]   com.google.cloud.tools:jib-maven-plugin ............ 1.3.0 -> 3.5.2
+[INFO]   org.openapitools:openapi-generator-maven-plugin ... 5.2.1 -> 7.27.0
+[INFO] 
+[INFO] All plugins have a version specified.
+[INFO] 
+[WARNING] Project does not define minimum Maven version required for build
+[INFO] Plugins require minimum Maven version of: 3.0
+[INFO] 
+[ERROR] Project does not define required minimum version of Maven.
+[ERROR] Update the pom.xml to contain maven-enforcer-plugin to
+[ERROR] force the Maven version which is needed to build this project.
+[ERROR] See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[ERROR] Using the minimum version of Maven: 3.0
+[INFO] 
+[INFO] Require Maven 2.0.2 to use the following plugin updates:
+[INFO]   org.codehaus.mojo:build-helper-maven-plugin .......... 3.2.0 -> 1.5
+[INFO] 
+[INFO] Require Maven 2.0.6 to use the following plugin updates:
+[INFO]   org.codehaus.mojo:build-helper-maven-plugin .......... 3.2.0 -> 1.9
+[INFO] 
+[INFO] Require Maven 2.1.0 to use the following plugin updates:
+[INFO]   org.jacoco:jacoco-maven-plugin ........ 0.8.7 -> 0.6.3.201306030806
+[INFO] 
+[INFO] Require Maven 2.2.1 to use the following plugin updates:
+[INFO]   org.codehaus.mojo:build-helper-maven-plugin ......... 3.2.0 -> 1.12
+[INFO]   org.jacoco:jacoco-maven-plugin ..................... 0.8.7 -> 0.8.2
+[INFO] 
+[INFO] Require Maven 3.0 to use the following plugin updates:
+[INFO]   org.codehaus.mojo:build-helper-maven-plugin ........ 3.2.0 -> 3.3.0
+[INFO]   org.jacoco:jacoco-maven-plugin .................... 0.8.7 -> 0.8.16
+[INFO] 
+[INFO] Require Maven 3.2.5 to use the following plugin updates:
+[INFO]   org.codehaus.mojo:build-helper-maven-plugin ........ 3.2.0 -> 3.4.0
+[INFO] 
+[INFO] Require Maven 3.6.3 to use the following plugin updates:
+[INFO]   org.codehaus.mojo:build-helper-maven-plugin ........ 3.2.0 -> 3.6.2
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.514 s
+[INFO] Finished at: 2026-11-03T17:44:53-03:00
+[INFO] ------------------------------------------------------------------------

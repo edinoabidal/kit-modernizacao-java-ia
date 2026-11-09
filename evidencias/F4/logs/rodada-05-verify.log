@@ -148,7 +148,7 @@ WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerCon
 INFO  EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
 WARN  UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: dae6d9e9-34cb-4011-a16a-1b14a7db24bd
+Using generated security password: <removida>
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
@@ -202,7 +202,7 @@ WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerCon
 INFO  EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
 WARN  UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 56037783-0d87-4c0e-aa39-a4b71e9d7737
+Using generated security password: <removida>
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
@@ -250,7 +250,7 @@ WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerCon
 INFO  EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
 WARN  UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 155ee9dc-4e3c-44f7-85f4-7b6c4ae12e97
+Using generated security password: <removida>
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
@@ -298,7 +298,7 @@ WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerCon
 INFO  EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
 WARN  UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 108a1439-85b9-43a0-8f46-495f39e4dbf1
+Using generated security password: <removida>
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
@@ -482,7 +482,7 @@ WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerCon
 INFO  EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
 WARN  UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 05f53a71-eef0-4903-9a26-1952d41dddd4
+Using generated security password: <removida>
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
@@ -535,7 +535,7 @@ WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerCon
 INFO  EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
 WARN  UserDetailsServiceAutoConfiguration - 
 
-Using generated security password: 9b9700a1-65b1-4338-adf0-6fc84ba142d6
+Using generated security password: <removida>
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
