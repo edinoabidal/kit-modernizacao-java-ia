@@ -1,0 +1,243 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< org.springframework.samples:spring-petclinic-rest >----------
+[INFO] Building spring-petclinic-rest 2.6.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.16:prepare-agent (default) @ spring-petclinic-rest ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- openapi-generator-maven-plugin:7.27.0:generate (default) @ spring-petclinic-rest ---
+[INFO] Generating with dryRun=false
+[INFO] No .openapi-generator-ignore file found.
+[INFO] OpenAPI Generator: spring (server)
+[INFO] Generator 'spring' is considered stable.
+[INFO] ----------------------------------
+[INFO] Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[INFO] NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[INFO] Invoker Package Name, originally not set, is now derived from model package name: org.springframework.samples.petclinic
+[INFO] Defaulting includeHttpRequestContext to 'false' for blocking
+[WARNING] 'generateJsonIncludeAnnotations' is not set. Defaulting to false: no @JsonInclude annotations are generated and property inclusion is governed entirely by the global ObjectMapper (7.23.0-equivalent output). Set 'generateJsonIncludeAnnotations=false' to keep this behavior and silence this warning, or 'generateJsonIncludeAnnotations=true' to emit spec-honest @JsonInclude annotations (see 'optionalNonNullPropertyJsonInclude'). Note: before 7.24.0 released output had no field-level @JsonInclude, so leaving this unset preserves that behavior.
+[WARNING] 'generateJsonSetterNullsAnnotations' is not set. Defaulting to false: no @JsonSetter(nulls = ...) annotations are generated and deserialization null-handling is governed entirely by the global ObjectMapper (7.23.0-equivalent output). Set 'generateJsonSetterNullsAnnotations=false' to keep this behavior and silence this warning, or 'generateJsonSetterNullsAnnotations=true' to emit @JsonSetter(nulls = ...) on optional non-nullable fields.
+[INFO] Processing operation failingRequest
+[INFO] Processing operation listOwners
+[INFO] Processing operation addOwner
+[INFO] Processing operation getOwner
+[INFO] Processing operation updateOwner
+[INFO] Processing operation addPet
+[INFO] Processing operation getPet
+[INFO] Processing operation updatePet
+[INFO] Processing operation addVisit
+[INFO] Processing operation listPetTypes
+[INFO] Processing operation listVets
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/OwnerDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/OwnerFieldsDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/PetDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/PetFieldsDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/PetTypeDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/RestErrorDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/RoleDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/SpecialtyDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/UserDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/ValidationMessageDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/VetDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/VisitDto.java
+[INFO] writing file /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/dto/VisitFieldsDto.java
+[INFO] Skipping generation of APIs.
+[INFO] Skipping generation of Webhooks.
+[INFO] Skipping generation of supporting files.
+############################################################################################
+# Thanks for using OpenAPI Generator.                                                      #
+# We appreciate your support! Please consider donating to help us maintain this project.   #
+# https://opencollective.com/openapi_generator/donate                                      #
+############################################################################################
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:add-source (add-source) @ spring-petclinic-rest ---
+[INFO] Source directory: /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/generated-sources/openapi/src/main/java added.
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.5.16:build-info (default) @ spring-petclinic-rest ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ spring-petclinic-rest ---
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] Copying 13 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.1:compile (default-compile) @ spring-petclinic-rest ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 97 source files with javac [debug parameters release 21] to target/classes
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/mapper/UserMapper.java:[16,10] Unmapped target properties: "id, user".
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/mapper/VisitMapper.java:[14,11] Unmapped target property: "pet".
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/mapper/PetMapper.java:[16,12] Unmapped target property: "typeId".
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/mapper/PetMapper.java:[22,9] Unmapped target property: "pet". Mapping from Collection element "VisitDto visits" to "Visit visits".
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/mapper/PetMapper.java:[22,9] Unmapped target property: "owner".
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ spring-petclinic-rest ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.1:testCompile (default-testCompile) @ spring-petclinic-rest ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 18 source files with javac [debug parameters release 21] to target/test-classes
+[WARNING] The following options were not recognized by any processor: '[mapstruct.suppressGeneratorVersionInfoComment, mapstruct.defaultComponentModel, mapstruct.suppressGeneratorTimestamp]'
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/OwnerRestControllerTests.java:[67,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/OwnerRestControllerTests.java:[67,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/OwnerRestControllerTests.java:[67,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/PetRestControllerTests.java:[65,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/PetRestControllerTests.java:[65,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/PetRestControllerTests.java:[65,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/PetTypeRestControllerTests.java:[60,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/PetTypeRestControllerTests.java:[60,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/PetTypeRestControllerTests.java:[60,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/SpecialtyRestControllerTests.java:[59,10] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/SpecialtyRestControllerTests.java:[59,10] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/SpecialtyRestControllerTests.java:[59,10] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/VetRestControllerTests.java:[59,10] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/VetRestControllerTests.java:[59,10] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/VetRestControllerTests.java:[59,10] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/VisitRestControllerTests.java:[62,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/VisitRestControllerTests.java:[62,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/VisitRestControllerTests.java:[62,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[INFO] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/OwnerRestControllerTests.java: Some input files use or override a deprecated API.
+[INFO] /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/src/test/java/org/springframework/samples/petclinic/rest/OwnerRestControllerTests.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.6:test (default-test) @ spring-petclinic-rest ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.springframework.samples.petclinic.service.clinicService.ClinicServiceJpaTests
+INFO  AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.springframework.samples.petclinic.service.clinicService.ClinicServiceJpaTests]: ClinicServiceJpaTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+INFO  SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.service.clinicService.ClinicServiceJpaTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+INFO  Version - HV000001: Hibernate Validator 8.0.3.Final
+INFO  ClinicServiceJpaTests - Starting ClinicServiceJpaTests using Java 21.0.13 with PID 9507 (started by <usuario> in /home/<usuario>/tcc-modernizacao/spring-petclinic-rest)
+DEBUG ClinicServiceJpaTests - Running with Spring Boot v3.5.16, Spring v6.2.19
+INFO  ClinicServiceJpaTests - The following 2 profiles are active: "jpa", "hsqldb"
+INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+INFO  HikariDataSource - HikariPool-1 - Starting...
+INFO  PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+INFO  HikariPool - HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@52285a5f
+INFO  HikariDataSource - HikariPool-1 - Start completed.
+INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+INFO  RegionFactoryInitiator - HHH000026: Second-level cache disabled
+INFO  SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+WARN  deprecation - HHH90000025: HSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+INFO  pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.7.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+INFO  JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+INFO  LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+INFO  EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+WARN  UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 59937a25-4c05-4a11-96df-52ca2b526ef8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+INFO  ClinicServiceJpaTests - Started ClinicServiceJpaTests in 4.049 seconds (process running for 5.242)
+WARN  SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+WARN  SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/home/<usuario>/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.8/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[ERROR] Tests run: 33, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.176 s <<< FAILURE! -- in org.springframework.samples.petclinic.service.clinicService.ClinicServiceJpaTests
+[ERROR] org.springframework.samples.petclinic.service.clinicService.ClinicServiceJpaTests.shouldDeletePetType -- Time elapsed: 0.044 s <<< ERROR!
+org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'org.springframework.samples.petclinic.model.PetType' (save the transient instance before flushing)
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:368)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:246)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at org.springframework.samples.petclinic.repository.jpa.JpaPetTypeRepositoryImpl$$SpringCGLIB$$0.delete(<generated>)
+	at org.springframework.samples.petclinic.service.ClinicServiceImpl.deletePetType(ClinicServiceImpl.java:180)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at org.springframework.samples.petclinic.service.ClinicServiceImpl$$SpringCGLIB$$0.deletePetType(<generated>)
+	at org.springframework.samples.petclinic.service.clinicService.AbstractClinicServiceTests.shouldDeletePetType(AbstractClinicServiceTests.java:402)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.IllegalStateException: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'org.springframework.samples.petclinic.model.PetType' (save the transient instance before flushing)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:167)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.executeUpdate(QuerySqmImpl.java:485)
+	at org.springframework.samples.petclinic.repository.jpa.JpaPetTypeRepositoryImpl.delete(JpaPetTypeRepositoryImpl.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 17 more
+Caused by: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'org.springframework.samples.petclinic.model.PetType' (save the transient instance before flushing)
+	at org.hibernate.engine.spi.CascadingActions$9.cascade(CascadingActions.java:389)
+	at org.hibernate.engine.spi.CascadingActions$9.cascade(CascadingActions.java:379)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:572)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:494)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:255)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:194)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:169)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.preFlush(AbstractFlushingEventListener.java:107)
+	at org.hibernate.event.internal.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1379)
+	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1366)
+	at org.hibernate.sql.exec.internal.StandardJdbcMutationExecutor.execute(StandardJdbcMutationExecutor.java:46)
+	at org.hibernate.query.sqm.internal.SimpleDeleteQueryPlan.executeUpdate(SimpleDeleteQueryPlan.java:187)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doExecuteUpdate(QuerySqmImpl.java:505)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.executeUpdate(QuerySqmImpl.java:477)
+	... 23 more
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   ClinicServiceJpaTests>AbstractClinicServiceTests.shouldDeletePetType:402 » InvalidDataAccessApiUsage org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'org.springframework.samples.petclinic.model.PetType' (save the transient instance before flushing)
+[INFO] 
+[ERROR] Tests run: 33, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.325 s
+[INFO] Finished at: 2026-11-09T10:45:53-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.6:test (default-test) on project spring-petclinic-rest: 
+[ERROR] 
+[ERROR] See /home/<usuario>/tcc-modernizacao/spring-petclinic-rest/target/surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
