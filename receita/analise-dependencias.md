@@ -7,8 +7,9 @@ Fontes usadas:
 - o `pom.xml` do legado;
 - a árvore de dependências gerada com o JDK 8
   (`mvnw dependency:tree`, salva em `evidencias/F3/dependency-tree-legado.txt`);
-- a linha de base F1 (`medicoes/medicoes.csv`): 24 dependências declaradas, 18 desatualizadas,
-  4 plugins desatualizados, parent 2.6.2 (mais recente 4.1.2; na mesma major, 2.7.18);
+- a linha de base F1 (`medicoes/medicoes.csv`): 24 dependências declaradas, 23 entradas desatualizadas
+  (22 dependências e o `spring-boot-maven-plugin` do `pluginManagement`; valor corrigido pela
+  `ERRATA.md`, a contagem original do script era 18), 4 plugins desatualizados, parent 2.6.2 (mais recente 4.1.2; na mesma major, 2.7.18);
 - a definição das receitas, lida nos arquivos `META-INF/rewrite/*.yml` dos JARs;
 - o resultado do dryRun (`evidencias/F3/dryrun.patch`).
 
@@ -125,7 +126,7 @@ O dryRun confirmou a ordem: o `pom.xml` saiu com `springdoc-openapi-starter-webm
 | `org.mapstruct:mapstruct` e `mapstruct-processor` | 1.4.1.Final | Versões antigas do processador não suportam bem Java 17+ | uma sub-receita `UpgradeDependencyVersion` da cadeia (o log do dryRun não separa qual) | Vão para 1.6.3 |
 | `mysql:mysql-connector-java` | 8.0.27 | Coordenada nova `com.mysql:mysql-connector-j` | `UpgradeSpringBoot_3_0` (`ChangeDependency`) | Trocada; versão do parent |
 | `org.postgresql:postgresql`, `org.hsqldb:hsqldb` | 42.3.1 / 2.5.2 | Versões vêm do parent | parent | Seguem o parent |
-| `org.springframework.data:spring-data-jdbc-core` | 1.2.1.RELEASE | Versão fixa, de 2020; incompatível com Spring Framework 6 | nenhuma | **F4:** não foi tocada; deve gerar conflito de classes com o Spring 6 |
+| `org.springframework.data:spring-data-jdbc-core` | 1.2.1.RELEASE | Versão fixa, de 2015; incompatível com Spring Framework 6 | nenhuma | **F4:** não foi tocada; deve gerar conflito de classes com o Spring 6 |
 | `org.openapitools:jackson-databind-nullable` | 0.2.1 | Versão fixa e antiga | nenhuma | **F4:** não foi tocada; avaliar atualização |
 | Jackson (`jackson-core`, `jackson-databind`, `jackson-datatype-jsr310`) | 2.13.1 (do parent) | Versão vem do parent | parent | Seguem o parent |
 | `com.jayway.jsonpath:json-path`, `org.mockito:mockito-core` | 2.6.0 / 4.0.0 | Versões vêm do parent | parent | Seguem o parent |

@@ -97,7 +97,10 @@ Arquivo: `src/main/java/org/springframework/samples/petclinic/util/ApplicationSw
 | Testes | N/D (build parou na compilação) |
 | Cobertura (linhas / ramos) | N/D (JaCoCo não gerou relatório) |
 | Dependências declaradas | 26 |
-| Dependências desatualizadas (qualquer major / mesma major) | 17 / 10 |
-| Plugins desatualizados | 3 |
+| Entradas desatualizadas (qualquer major / mesma major) | 22 / 11 |
+| Plugins com versão maior disponível | 2 |
 | Parent atual / mais recente / mais recente na mesma major | 3.5.16 / 4.1.2 / 3.5.16 |
 | Árvore limpa após a medição | sim |
+
+Valores corrigidos conforme a `ERRATA.md`. A saída original do script, em `saida-medir.txt` e
+`linha-medicoes.csv`, mostra os valores antigos (17 / 10 e 3 plugins).
